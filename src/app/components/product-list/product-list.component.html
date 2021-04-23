@@ -1,0 +1,17 @@
+<h2> Products </h2>
+
+<!--  
+<div class="alert alert-primary" role="alert">
+  Sepete Eklendi
+</div>
+-->
+
+<div *ngFor="let product of products" class="card" style="width: 18rem;">
+    <img src="https://image.freepik.com/free-vector/black-round-stage-with-neon-light-black_134830-750.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{product.name}}</h5>
+      <p class="card-text">{{product.price}}</p>
+      <a  class="btn btn-primary"  >Sepete ekle</a>
+    </div>
+  
+    <!--  (click)="addToCart(product)  -->
